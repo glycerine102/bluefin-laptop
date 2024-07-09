@@ -2,12 +2,20 @@
 
 set -ouex pipefail
 
-programming_packages=(
+sysadmin_packages=(
   "alacritty"
 )
 
+networking_packages=(
+  "netbird"
+  "netbird-ui"
+  "libappindicator-gtk3"
+  "libappindicator"
+)
+
 packages=(
-  "${programming_packages[@]}"
+  "${sysadmin_packages[@]}"
+  "${networking_packages[@]}"
 )
 
 rpm-ostree install "${packages[@]}"
