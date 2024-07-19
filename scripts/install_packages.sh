@@ -2,10 +2,6 @@
 
 set -ouex pipefail
 
-# Set up nyx semantic versioning tool
-curl -L https://github.com/mooltiverse/nyx/releases/download/3.0.4/nyx-linux-amd64 > /tmp/nyx
-mv /tmp/nyx /usrlocal/bin/nyx && chown root:root /usr/local/bin/nyx && chmod 0755 /usr/local/bin/nyx
-
 sysadmin_packages=(
   "alacritty"
 )
