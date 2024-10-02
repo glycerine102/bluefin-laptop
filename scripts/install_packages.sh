@@ -2,7 +2,11 @@
 
 set -ouex pipefail
 
-sysadmin_packages=(
+system_packages=(
+  "monitor-edid"
+)
+
+devops_packages=(
   "alacritty"
 )
 
@@ -14,7 +18,8 @@ networking_packages=(
 )
 
 packages=(
-  "${sysadmin_packages[@]}"
+  "${system_packages[@]}"
+  "${devops_packages[@]}"
   "${networking_packages[@]}"
 )
 
