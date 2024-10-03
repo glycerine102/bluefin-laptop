@@ -3,7 +3,9 @@
 set -ouex pipefail
 
 system_packages=(
+  "gtk-murrine-engine"
   "monitor-edid"
+  "sassc"
 )
 
 devops_packages=(
